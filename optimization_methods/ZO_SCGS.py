@@ -16,10 +16,10 @@ def CG(g_0, u_0, eta, beta, Q):
 
     while True:
 
-        #vidx = np.argmin(np.dot(g,Q))
-        #v=Q[:,vidx]
+        vidx = np.argmin(np.dot(g,Q))
+        v=Q[:,vidx]
 
-        v = -np.sign(g)*4
+        #v = -np.sign(g)*4
 
 
         dot=np.dot(g, u - v)
@@ -87,8 +87,8 @@ def ZOSCGS(x0, N, M, M_2, epsilon, D, gamma, MGR, objfunc):
         B[k]=50 #used for fixed B
         randBatchIdx = np.random.choice(np.arange(0, MGR.parSet['nFunc']), B[k], replace=True)
         print(randBatchIdx)
-        #z = (1 - dzeta[k]) * x + dzeta[k] * y
-        z = x
+        z = (1 - dzeta[k]) * x + dzeta[k] * y
+        #z = x
         # Sampling of e:
         E = np.random.uniform(-1.0, 1.0, size=(shp[0],shp[1],B[k]))
         norms = np.linalg.norm(E,axis=(0,1),keepdims=True)
