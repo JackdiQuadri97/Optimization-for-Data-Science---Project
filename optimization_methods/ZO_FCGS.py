@@ -15,10 +15,10 @@ def CG(g_0, u_0, eta, beta, Q):
     alpha_t=1
 
     while True:
-        #vidx = np.argmin(np.dot(g,Q))
-        #v=Q[:,vidx]
+        vidx = np.argmin(np.dot(g,Q))
+        v=Q[:,vidx]
 
-        v = -np.sign(g)*4
+        #v = -np.sign(g)*4
 
         dot=np.dot(g, u - v)
         #print(str(dot) + " " + str(beta))
