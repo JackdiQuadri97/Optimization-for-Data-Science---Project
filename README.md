@@ -1,5 +1,6 @@
-# Final Project - Optimization for Data Science - Data Science MSc. - UniPD
-# Giacomo Virginio, Mikhail Kolobov
+# Human Pose Estimation on LSP Dataset
+### Final Project for Optimization for Data Science course, MSc. Data Science @ UniPD
+#### Giacomo Virginio, Mikhail Kolobov
 
 This github contains the code for the implementation of algorithms from the papers of Sahu et al., Gao et al. and Lobanov et al. regarding optimization in the zeroth order Frank-Wolfe methods.
 
